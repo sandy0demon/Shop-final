@@ -1,0 +1,30 @@
+.header {
+    background-color: $darkColor;
+    padding: 20px 0;
+    position: relative;
+
+
+    .header-items {
+        @include center-between;
+
+        &__left {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+        }
+
+        &__right {
+            @include center-between;
+            column-gap: 50px;
+        }
+
+        .hide-of-mob {
+
+            display: block;
+
+            @include _480 {
+                display: none;
+            }
+        }
+    }
+}

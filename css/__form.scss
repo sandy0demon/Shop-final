@@ -1,0 +1,72 @@
+.main-form {
+    width: 100%;
+
+    @include _768 {
+        width: 55%;
+    }
+
+    @include _480 {
+        width: 100%;
+    }
+
+    legend {
+        font-weight: 300;
+        font-size: 16px;
+        color: $darkColor;
+        outline: none;
+    }
+
+    fieldset {
+        border: none;
+
+    }
+
+    .form-text {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            font-family: 'Lato', sans-serif;
+            padding: 13px 16px;
+            border: 1px solid #a4a4a4;
+            font-size: 13px;
+            margin-top: 25px;
+            width: 100%;
+
+            &::placeholder {
+                color: #B1B1B1;
+            }
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 300px;
+            color: #B1B1B1;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+    }
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 31px;
+    margin-bottom: 33px;
+
+    .form-gender {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        color: $darkColor;
+        gap: 5px;
+
+        input {
+            font-family: 'Lato', sans-serif;
+            border: 1px solid #a4a4a4;
+
+        }
+
+    }
+}

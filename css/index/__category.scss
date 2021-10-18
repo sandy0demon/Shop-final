@@ -1,0 +1,160 @@
+.null {
+    @include _480 {
+        display: none;
+    }
+}
+
+.category {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 15px;
+
+    @include _1024 {
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    @include _480 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        height: 260px;
+        text-align: center;
+        background-color: gray;
+
+        @include _1024 {
+            width: 32%;
+        }
+
+        @include _768 {
+            width: 31%;
+            height: 168px;
+        }
+
+        @include _480 {
+            width: 100%;
+            height: 247px;
+
+        }
+
+        span {
+            color: #FFFFFF;
+            font-size: 18px;
+            text-transform: uppercase;
+            z-index: 2;
+
+            @include _768 {
+                font-size: 16px;
+            }
+        }
+
+        h2 {
+            color: $pinkLightColor;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 2;
+
+
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(33, 22, 22, 0.7);
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    a {
+        display: contents;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    #img-1 {
+        background-image: url(../img/category/for-women.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-size: 110%;
+            background-position: center center;
+        }
+
+        @include _1024 {
+            background-size: cover;
+        }
+    }
+
+    #img-2 {
+        background-image: url(../img/category/for-men.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-size: 110%;
+            background-position: center center;
+        }
+
+        @include _1024 {
+            background-size: cover;
+        }
+    }
+
+    #img-3 {
+        background-image: url(../img/category/for-kids.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-size: 110%;
+            background-position: center center;
+        }
+
+        @include _1024 {
+            background-size: cover;
+        }
+    }
+
+    #img-4 {
+        background-image: url(../img/category/acces.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-size: 105%;
+            background-position: center center;
+        }
+
+        @include _1024 {
+            background-size: cover;
+        }
+    }
+}

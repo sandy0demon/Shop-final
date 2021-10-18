@@ -1,0 +1,198 @@
+.filter {
+    margin-top: 50px;
+}
+
+.filter-items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    @include _768 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include _480 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .filter-primary {
+        position: relative;
+
+        &__box {
+            outline: 0;
+            outline-offset: 0;
+            cursor: pointer;
+            transition: padding 0.5s;
+
+            &[open] {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                color: #F16D7F;
+                box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+                padding: 10px 13px;
+                max-width: 360px;
+                width: 100%;
+                animation: fadeInDown;
+                animation-duration: 0.5s;
+                z-index: 99;
+
+                @include _480 {
+                    min-width: 320px;
+                    top: 15px;
+                }
+            }
+        }
+
+
+        &__title {
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            list-style: none;
+            font-weight: 600;
+
+            @include _768 {
+                font-size: 14px;
+            }
+
+            @include _480 {
+
+                font-size: 20px;
+
+                p {
+                    display: none;
+                }
+
+            }
+        }
+
+        &__category {
+            margin-top: 9px;
+            margin-bottom: 9px;
+
+            &[open] .filter-primary__text {
+                color: $pinkLightColor;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            color: $colorDarkGray;
+            text-transform: uppercase;
+            border-bottom: 1px solid #EBEBEB;
+            border-left: 5px solid $pinkLightColor;
+            padding: 10px;
+        }
+
+        ul {
+            padding: 10px 0 10px 12px;
+            margin: 0;
+            list-style: none;
+            animation: backInLeft;
+            animation-duration: 0.8s;
+        }
+
+        &__items {
+            font-size: 14px;
+            color: $colorDarkGray;
+            padding: 24px 0;
+        }
+
+        li {
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
+    }
+}
+
+.filter-secondary {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    color: $colorDarkGray;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+
+    @include _768 {
+        justify-self: flex-end;
+    }
+
+    @include _480 {
+        font-size: 12px;
+    }
+
+
+    &__text {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        cursor: pointer;
+
+    }
+
+    &__items {
+        position: absolute;
+        top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 7px 9px;
+        animation: fadeInDown;
+        animation-duration: 0.5s;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
+        input[type="checkbox"] {
+            position: absolute;
+            left: -9999px;
+
+            &+label {
+                position: relative;
+                display: inline-block;
+                padding: 6px 10px 6px (18px + 10);
+                cursor: pointer;
+
+                // Default State
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url(https://andycrone.com/media/2015/02/app-icons.png);
+                    background-repeat: no-repeat;
+                    background-size: 72px auto;
+                    -webkit-background-size: 72px auto;
+                    border: 1px solid $colorDarkGray;
+                }
+            }
+
+            // Checked State
+            &:checked+label {
+                &:before {
+                    background-color: $pinkLightColor;
+                    border: none;
+                }
+            }
+
+            // Disabled State
+            &:disabled {
+                &+label {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

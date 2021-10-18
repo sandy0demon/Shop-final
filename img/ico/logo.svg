@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="44px" height="38px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 44 38"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#F1D9DD}
+    .fil4 {fill:#F38191}
+    .fil2 {fill:#FCBAC3}
+    .fil1 {fill:#F1D9DD;fill-rule:nonzero}
+    .fil3 {fill:#F38191;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" transform="matrix(0.492986 -0.847215 0.853876 0.48914 -0.00106086 23.8078)" width="4.94" height="25"/>
+  <path class="fil1" d="M27.28 4.89c4.22,0 8.04,1.7 10.81,4.44 2.77,2.74 4.48,6.54 4.48,10.72 0,4.19 -1.71,7.98 -4.48,10.72 -2.77,2.75 -6.59,4.45 -10.81,4.45 -4.21,0 -8.04,-1.7 -10.8,-4.45 -2.77,-2.74 -4.48,-6.53 -4.48,-10.72 0,-4.18 1.71,-7.98 4.48,-10.72 2.76,-2.74 6.59,-4.44 10.8,-4.44zm7.33 7.9c-1.88,-1.86 -4.47,-3.01 -7.33,-3.01 -2.86,0 -5.45,1.15 -7.32,3.01 -1.87,1.86 -3.03,4.42 -3.03,7.26 0,2.84 1.16,5.41 3.03,7.27 1.87,1.85 4.46,3 7.32,3 2.86,0 5.45,-1.15 7.33,-3 1.87,-1.86 3.03,-4.43 3.03,-7.27 0,-2.84 -1.16,-5.4 -3.03,-7.26z"/>
+  <rect class="fil2" transform="matrix(0.853876 -0.48914 0.492986 0.847215 4.22732 11.8849)" width="4.94" height="25"/>
+  <path class="fil3" d="M27.72 7.33c4.21,0 8.04,1.7 10.8,4.45 2.77,2.74 4.48,6.53 4.48,10.72 0,4.18 -1.71,7.98 -4.48,10.72 -2.76,2.75 -6.59,4.44 -10.8,4.44 -4.22,0 -8.04,-1.69 -10.81,-4.44 -2.77,-2.74 -4.48,-6.54 -4.48,-10.72 0,-4.19 1.71,-7.98 4.48,-10.72 2.77,-2.75 6.59,-4.45 10.81,-4.45zm7.32 7.91c-1.87,-1.86 -4.46,-3.01 -7.32,-3.01 -2.86,0 -5.45,1.15 -7.33,3.01 -1.87,1.85 -3.03,4.42 -3.03,7.26 0,2.84 1.16,5.41 3.03,7.26 1.88,1.86 4.47,3.01 7.33,3.01 2.86,0 5.45,-1.15 7.32,-3.01 1.87,-1.85 3.03,-4.42 3.03,-7.26 0,-2.84 -1.16,-5.41 -3.03,-7.26z"/>
+  <rect class="fil4" x="12.5" width="4.87" height="24.46"/>
+ </g>
+</svg>

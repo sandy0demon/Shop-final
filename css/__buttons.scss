@@ -1,0 +1,133 @@
+.main-btn {
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid $pinkLightColor;
+    color: $pinkLightColor;
+    padding: 15px 39px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    &:hover {
+        background-color: $pinkLightColor;
+        color: #fff;
+        transition: 0.5s;
+    }
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 10px;
+    column-gap: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: all 0.25s;
+    z-index: 9;
+
+    &:hover {
+        color: rgba(58, 56, 56, 0.83);
+        background-color: #fff;
+    }
+}
+
+.form-btn {
+    font-size: 16px;
+    background-color: $pinkLightColor;
+    color: #fff;
+    padding: 15px 39px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $pinkLightColor;
+    column-gap: 10px;
+
+    &:hover {
+        color: $pinkLightColor;
+        background-color: #fff;
+        border: 1px solid $pinkLightColor;
+        transition: 0.5s;
+    }
+}
+
+.order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 15px;
+    column-gap: 10px;
+    border: 1px solid #A4A4A4;
+    background-color: transparent;
+    font-size: 14px;
+    color: #A4A4A4;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: all 0.25s;
+    z-index: 9;
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.83);
+        background-color: #A4A4A4;
+    }
+}
+
+.btn--pink {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    column-gap: 10px;
+    border: 1px solid $pinkLightColor;
+    background-color: $pinkLightColor;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: all 0.25s;
+    z-index: 9;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $pinkLightColor;
+        background-color: transparent;
+    }
+
+}
+
+.grey--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 39px;
+    column-gap: 10px;
+    border: 1px solid #A4A4A4;
+    background-color: transparent;
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: all 0.25s;
+    z-index: 9;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+    @include _480 {
+        font-size: 12px;
+        padding: 9px 20px;
+    }
+
+}

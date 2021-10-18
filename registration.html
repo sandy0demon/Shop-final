@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/1351.js"></script>
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <nav class="header-items container">
+                    <div class="header-items__left">
+                        <a href="./index.html"><img src="img/ico/logo.svg" alt="logo"></a>
+                        <a href="#"><img src="img/ico/1search.svg" alt="Search"></a>
+                    </div>
+                    <div class="header-items__right">
+                        <a href="#" class="menu-btn"><img src="img/ico/1menu.svg" alt="Menu"></a>
+                        <a class="hide-of-mob" href="./registration.html"><img src="img/ico/1user.svg"
+                                alt="Cabinet"></a>
+                        <a class="hide-of-mob" href="./shopping-cart.html"><img src="img/ico/1bag.svg" alt="Cart"></a>
+                    </div>
+                </nav>
+                <menu class="sidebar">
+                    <p>Menu</p>
+                    <ul class="sidebar__list">
+                        <h2 class="sidebar__title"><a href="#">Man</a></h2>
+                        <li class="sidebar__item"><a href="#">Accessories</a></li>
+                        <li class="sidebar__item"><a href="#">Bags</a></li>
+                        <li class="sidebar__item"><a href="#">Denim</a></li>
+                        <li class="sidebar__item"><a href="#">T-Shirts</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list">
+                        <h2 class="sidebar__title"><a href="#">Women</a></h2>
+                        <li class="sidebar__item"><a href="#">Accessories</a></li>
+                        <li class="sidebar__item"><a href="#">Jackets & Coats</a></li>
+                        <li class="sidebar__item"><a href="#">Polos</a></li>
+                        <li class="sidebar__item"><a href="#">T-Shirts</a></li>
+                        <li class="sidebar__item"><a href="#">Shirts</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list">
+                        <h2 class="sidebar__title"><a href="#">Kids</a></h2>
+                        <li class="sidebar__item"><a href="#">Accessories</a></li>
+                        <li class="sidebar__item"><a href="#">Jackets & Coats</a></li>
+                        <li class="sidebar__item"><a href="#">Polos</a></li>
+                        <li class="sidebar__item"><a href="#">T-Shirts</a></li>
+                        <li class="sidebar__item"><a href="#">Bags</a></li>
+                    </ul>
+                    <button class="btn-close"><i class="fal fa-times"></i></button>
+                    <p class="mobile-items"><a href="./registration.html">Sign In</a></p>
+
+
+                    <p class="mobile-items"> <a href="./shopping-cart.html">Cart</a></p>
+                </menu>
+
+            </header>
+
+            <header class="header-nav">
+                <div class="header-nav__items container">
+                    <div class="header-nav__title">
+                        <h1>Registration</h1>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="registration container">
+                    <div class="registration-form">
+
+                        <form class="main-form" action="#">
+                            <fieldset class="form-text">
+                                <legend>Your name</legend>
+                                <input type="text" name="firstName" minlength="2" maxlength="10"
+                                    placeholder="First name">
+                                <input type="text" name="lastName" minlength="2" maxlength="10" placeholder="Last name">
+                            </fieldset>
+
+                            <fieldset class="gender">
+                                <div class="form-gender">
+                                    <input type="radio" name="gender" id="male" checked />
+                                    <label for="male"></label><span>Male</span>
+                                </div>
+                                <div class="form-gender">
+                                    <input type="radio" name="gender" id="male" />
+                                    <label for="female"></label><span>Female</span>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="form-text">
+                                <legend>Login details</legend>
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="password" name="password" minlength="8" placeholder="Password">
+                                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                                    and lowercase letters</p>
+                            </fieldset>
+                            <div class="button">
+                                <button class="form-btn">Join Now <i class="fal fa-arrow-right"></i></button>
+                            </div>
+                    </div>
+
+                    <div class="registration-loyalty">
+                        <h2>Loyalty has its perks</h2>
+                        <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
+                            with these as soon as you join:</p>
+                        <ul>
+                            <li>15% off welcome offer</li>
+                            <li>Free shipping, returns and exchanges on all orders</li>
+                            <li>$10 off a purchase on your birthday</li>
+                            <li>Early access to products</li>
+                            <li>Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer-subscribe">
+                <section class="footer-subscribe__items container">
+                    <div class="subscribe__item-left">
+                        <img src="./img/girl.png">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span class="italic"> a pulvinar
+                                purus
+                                condimentum“</span> </p>
+                    </div>
+
+                    <div class="subscribe__item-right">
+                        <p><span class="bold">Subscribe</span><br>for our newletter and promotion</p>
+                        <div class="subscribe__item-form">
+                            <input type="email" name="email" placeholder="Enter Your Email">
+                            <button class="btn-sub" type="submit" value="Subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+
+            <footer class="footer-down">
+                <div class="footer-down__items container">
+                    <div class="footer-down__text">
+                        <p>© 2021 Brand All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-down__icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+
+</body>

@@ -1,0 +1,50 @@
+.pagination {
+    margin-top: 48px;
+}
+
+.pages {
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        border: 1px solid $colorLightGray;
+        font-weight: 300;
+        border-radius: 5px;
+        width: 45%;
+        column-gap: 35px;
+        margin: 0 auto;
+
+        @include _768 {
+            width: 53%;
+        }
+
+        @include _480 {
+            width: 90%;
+            column-gap: 20px;
+        }
+    }
+
+    &__btn {
+        list-style: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    &__item {
+        list-style: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: #C4C4C4;
+    }
+
+    &__dots {
+        display: flex;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0px 5px;
+        color: #C4C4C4;
+    }
+}

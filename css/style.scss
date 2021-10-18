@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+@import "__vars"; //Переменные
+@import "default/__default"; //Обнуление стилей
+@import "mixin/__mixin"; //Миксины
+@import "mixin/__media-mixin";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    line-height: 1.5;
+
+    h2 {
+        font-size: 30px;
+        color: $darkColor;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 14px;
+        color: $colorGray;
+        font-weight: 400;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+@import "headers/__header"; //Шапка
+@import "headers/__header-nav"; //Шапка с категорией каталога
+@import "__slidebar";
+
+
+@import "index/__hero"; //Баннер
+@import "index/__category"; //Категории
+
+@import "catalog/__card"; //Карточка
+@import "catalog/__catalog"; //Каталог
+
+
+
+
+@import "footers/__footer-features"; //Преимущества в футере
+@import "footers/__subscribe-form"; // Форма подписки
+@import "footers/__footer-down"; // Футер нижний
+
+@import "__filter"; //Шапка с категорией каталога
+@import "catalog/__pagination"; //Пагинация
+@import "product/__product-slider"; //Слайдер в карточке
+@import "product/__product-description"; //Описание товара
+
+@import "__cart"; //Кнопки
+
+@import "register/__registration"; //Регистрация
+@import "__form"; //Формы
+
+@import "__text-style"; //стили для текста
+@import "__buttons"; //Кнопки
+
+.active {
+    color: $pinkLightColor !important;
+}

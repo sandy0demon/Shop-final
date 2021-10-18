@@ -1,0 +1,83 @@
+.registration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 96px;
+
+    @include _480 {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+.registration-form {
+    width: 35%;
+
+    @include _768 {
+        width: 50%;
+    }
+
+    @include _480 {
+        width: 100%;
+    }
+}
+
+.registration-loyalty {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    width: 55%;
+
+    @include _768 {
+        width: 45%;
+    }
+
+    @include _480 {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        @include _768 {
+            font-size: 16px;
+        }
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 300;
+
+        @include _768 {
+            font-size: 16px;
+        }
+    }
+
+    ul {
+        list-style-image: url(../img/ico/mark.svg);
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: 300;
+
+        li:not(:first-child) {
+            margin-top: 16px;
+        }
+
+        @include _768 {
+            font-size: 16px;
+        }
+    }
+
+
+
+}
+
+.button {
+    margin-top: 40px;
+}

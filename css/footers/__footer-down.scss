@@ -1,0 +1,54 @@
+.footer-down {
+    background-color: $darkColor;
+    padding: 30px 0;
+
+    @include _480 {
+        padding: 43px 0 9px;
+    }
+
+    &__items {
+        @include center-between;
+
+        @include _480 {
+            ustify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .footer-down__text {
+            p {
+                font-size: 16px;
+                color: #FBFBFB;
+            }
+        }
+
+        .footer-down__icons {
+            @include center-between;
+            gap: 8px;
+
+            @include _480 {
+                margin-bottom: 40px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                color: #000;
+                padding: 8px 12px;
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: $pinkLightColor;
+                    color: #fff;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+
+
+}
